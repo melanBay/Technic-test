@@ -1,4 +1,26 @@
 
+# Problem
+
+# The nested brackets problem is a problem that determines if a sequence of
+
+# brackets are properly nested.  A sequence of brackets s is considered properly nested
+
+# if any of the following conditions are true:
+
+# - S is empty
+
+# - S has the form (U) or [U] or {U} where U is a properly nested string
+
+# - S has the form VW where V and W are properly nested strings
+
+# For example, the string "( )( )[ ( ) ]" is properly nested but "[ ( ( ) ]" is not.
+
+# The function called isBalanced takes as input a string which is a sequence of brackets and
+
+# returns true if input is nested and false otherwise.
+
+
+
 """
 The idea of this algorithm is constructed a list contains the following symbols ( '(,[,{' )
 after any change of symbols check if you find a correct pair.
